@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { OverhideHub, OverhideStatus, OverhideLogin, OverhideAppsell } from "overhide-widgets";
+
+OverhideHub;
+OverhideStatus;
+OverhideLogin
+OverhideAppsell;
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

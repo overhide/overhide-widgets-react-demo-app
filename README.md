@@ -1,4 +1,123 @@
-# Getting Started with Create React App
+<p align="center"><a href="https://overhide.io"><img src="https://overhide.github.io/overhide-widgets/assets/logo.png" width="200px"/></a></p>
+
+<p align="center"><a href="https://overhide.io">overhide.io</a></p><p style="width: 500px; margin: auto">A free and open-sourced (mostly) ecosystem of widgets, a front-end library, and back-end services &mdash; to make addition of "logins" and "in-app-purchases" (IAP) to your app as banal as possible.</p>
+
+<hr/>
+
+# [overhide-widgets](https://github.com/overhide/overhide-widgets) React Demo app
+
+
+
+This is a demo of using [overhide-widgets](https://github.com/overhide/overhide-widgets) with  [React.js](https://reactjs.org/).
+
+The [live demo](https://overhide.github.io/overhide-widgets-react-demo-app/build/index.html) &mdash; which uses a demo back-end hosted as an Azure function (as per  [overhide-widgets](https://github.com/overhide/overhide-widgets) demo code) &mdash; is described in the [About](#about) section below.
+
+
+
+# About
+
+This demo was created using the following steps: 
+
+
+
+Created the React application and go into the new subfolder.
+
+````
+npx create-react-app overhide-widgets-react-demo-app -–template typescript
+cd overhide-widgets-react-demo-app
+````
+
+
+
+NPM install all the dependencies, types.
+
+Note the `overhide-widgets`&mdash; they're being braught in as a dependancy.
+
+```
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest overhide-widgets
+```
+
+
+
+Modify `eslintConfig` in [package.json](./package.json) as per https://www.fast.design/docs/integrations/react/.
+
+Note the `no-unused-expressions` is added.
+
+```
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-unused-expressions": "off"
+    }
+  }
+```
+
+
+
+Bring in [overhide-widgets](https://github.com/overhide/overhide-widgets) Web components into the application.  Modify [src/index.js](src/index.js).
+
+```
+import { OverhideHub, OverhideStatus, OverhideLogin, OverhideAppsell } from "overhide-widgets";
+
+OverhideHub;
+OverhideStatus;
+OverhideLogin
+OverhideAppsell;
+```
+
+
+
+Added React components to wrap [overhide-widgets](https://github.com/overhide/overhide-widgets) Web components:
+
+- [src/components/OverhideHubComponent.tsx](src/components/OverhideHubComponent.tsx)
+
+  - wraps `overhide-hub`
+
+- [src/components/OverhideAppsellButtonComponent.tsx](src/components/OverhideAppsellButtonComponent.tsx)
+
+  - wraps `overhide-appsell`
+
+- [src/components/OverhideLoginButtonComponent.tsx](src/components/OverhideLoginButtonComponent.tsx)
+
+  - wraps `overhide-appsell` as a login-only button
+  - also added custom styles fro demo purposes [src/components/OverhideHubComponent.css](src/components/OverhideHubComponent.css)
+
+- [src/components/OverhideLoginComponent.tsx](src/components/OverhideLoginComponent.tsx)
+
+  - wraps `overhide-login`
+
+- [src/components/OverhideStatusComponent.tsx](src/components/OverhideStatusComponent.tsx)
+
+  - wraps `overhide-status`
+
+  
+
+Rename `/src/App.js` to [/src/App.tsx](/src/App.tsx) and modify it for  [overhide-widgets](https://github.com/overhide/overhide-widgets) demo code specifics:
+
+- hub
+- nav
+- login button
+- three feature buttons
+- some other demo specific elements:
+  - [src/components/Messages.tsx](src/components/Messages.tsx) messages widget and corresponding [styles](src/components/Messages.css)
+  - some [assets](src/assets) and [public](./public) files
+
+
+
+The components use a demo back-end hosted as an Azure function as per  [overhide-widgets](https://github.com/overhide/overhide-widgets) demo code, read about it there.
+
+
+
+Run using `npm run start`
+
+View at http://localhost:3000/
+
+
+
+# Notes
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
