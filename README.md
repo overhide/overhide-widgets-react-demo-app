@@ -10,9 +10,9 @@
 
 
 
-This is a demo of using [overhide-widgets](https://github.com/overhide/overhide-widgets) with  [React.js](https://reactjs.org/).
+This is [a demo](https://overhide.github.io/overhide-widgets-react-demo-app/build/index.html) of using [overhide-widgets](https://github.com/overhide/overhide-widgets) with  [React.js](https://reactjs.org/).
 
-The 🎈 [LIVE DEMO](https://overhide.github.io/overhide-widgets-react-demo-app/build/index.html) 🎈 &mdash; which uses a demo back-end hosted as an Azure function (as per  [overhide-widgets](https://github.com/overhide/overhide-widgets) demo code) &mdash; is described in the [About](#about) section below.
+The [live demo](https://overhide.github.io/overhide-widgets-react-demo-app/build/index.html) &mdash; which uses a demo back-end hosted as an Azure function (as per  [overhide-widgets](https://github.com/overhide/overhide-widgets) demo code) &mdash; is described in the [About](#about) section below.
 
 
 
