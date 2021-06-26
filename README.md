@@ -6,7 +6,7 @@
 
 
 
-# [overhide-widgets](https://github.com/overhide/overhide-widgets) React Demo app
+[overhide-widgets](https://github.com/overhide/overhide-widgets) React Demo app
 
 
 
