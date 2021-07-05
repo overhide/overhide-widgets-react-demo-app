@@ -30,7 +30,7 @@ const OverhideAppsellButtonComponent: React.FunctionComponent<OverhideAppsellBut
       +`&from=${event.detail.from}`
       +`&isTest=${event.detail.isTest}`
       +`&message=${btoa(event.detail.message)}`
-      +`&signature=${event.detail.signature}`)
+      +`&signature=${btoa(event.detail.signature)}`)
       .then(response => {
         if (response.ok) {
           props.onAddMessage && props.onAddMessage(event.detail.sku);
