@@ -54,6 +54,15 @@ const App: React.FunctionComponent<AppProps>  = (props) => {
         </div>          
       </div>
 
+      <div className="w3-container note-container"><div className="w3-card w3-sand w3-margin note">
+        <img className="w3-left info" src={`${process.env.PUBLIC_URL}/info.png`}></img>
+        <p>The basic demo showing off all widgets as part of a React.js application.  Using features causes back-end endpoint invocations with authorization checks.</p>
+        <p>In the top-right we see the <em>overhide-status</em> widget &mdash; allows (re)login, transaction check, logout, and payments refresh.</p>
+        <p>Just below we see an explicit "login" button (<em>overhide-appsell</em> widget).  This button always allows (re)login and never starts a feature flow.  This button has some custom neopolitan themed color scheme CSS.</p>
+        <p>At the bottom we see three feature buttons (<em>overhide-appsell</em> widgets).  These cause initial login and feature flows &mdash; through the backe-end &mdash; at different payment tiers.</p>
+        <p><a href="https://github.com/overhide/overhide-widgets#demos">...back to demos</a></p>    
+      </div></div>
+
       <OverhideLoginComponent hub={hub}></OverhideLoginComponent>
 
       <div className="w3-row w3-padding-64"><div className="w3-col s4">&nbsp;</div><div className="w3-col s4 w3-center">
